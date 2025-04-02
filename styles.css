@@ -1,0 +1,36 @@
+li{
+    color: orange;
+}
+h1 {
+    text-align: center;
+}
+img {
+    /*max-width: 500px;*/
+    display: block;
+    margin: auto;
+}
+
+/* # means we are targeting an ID */
+#mainImageContainer {
+    background-color: black;
+    height: 300px;
+    overflow: hidden;
+}
+
+/* child selecter - styles only direct children that are img of #mainImageContainer*/
+#mainImageContainer > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* descendant selecter */
+#jamesList li{
+    list-style-type: none;
+}
+
+/* class selecter (.) */
+.style-li{
+    list-style-type: decimal;
+    font-weight: bold;
+    
+}

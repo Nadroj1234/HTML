@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Intro</title>
+    <!--Embedded Styles-->
+    <style>
+      /* CSS Selecter */
+      h3 {
+        font-style: italic;
+        text-decoration: underline;
+      }
+    </style>
+    <!--External Styles-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1 style="color: purple">Arby's</h1>
+      <div id="mainImageContainer">
+        <img src="./images/arbys.png" alt="arbys" />
+      </div>
+      <div>
+        <!--Inline style - not the best approach, but good last resort
+        Violates seperate of concerns-->
+        <h2>These are inline styles</h2>
+        <p style="color: red; font-size: 3em">we have the meats!</p>
+        <p style="color: red; font-size: 3em">
+          Josh will only eat their cheeseburgers
+        </p>
+      </div>
+      <div id="arbysLists">
+        <!--Embedded styles are styles that are all stored in this page, in the head -->
+        <h2>These use embedded styles</h2>
+        <div id="jamesList">
+          <h3>Foods approved by James</h3>
+          <ul>
+            <li>Chicken Tendies</li>
+            <li>Curly Fries</li>
+            <li>Cheese Sticks</li>
+          </ul>
+        </div>
+        <h3>Foods approved by Dakota</h3>
+        <ul>
+          <li class="styled-li">Arby's Sauce</li>
+          <li class="styled-li">French Dip</li>
+          <li class="styled-li">Crinkle Fries</li>
+          <li class="styled-li">Steak</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
