@@ -31,4 +31,4 @@
 12.  `git fetch`
     Downloads changes from the remote, but doesn't merge them automatically.
 13.  `git merge`
-    Merges changes from on ebranch into another.
+    Merges changes from one branch into another.
