@@ -34,3 +34,7 @@
     Merges changes from one branch into another.
 14. `git clone <repo>`
     Copies a remote repository to your local machine.
+
+### **`.gitignore`**
+
+    Use `.gitignore` file to specify files that should not be tracked/ commited to git.
