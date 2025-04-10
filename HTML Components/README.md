@@ -28,5 +28,7 @@
     **Note**: You may need to first create a repo in github, and use `add origin` to link your local repo to the remote one.
 11. `git pull`
     Fetches and merges changes from the remote repository to your local file.
-12.  `git fetch`
+12. `git fetch`
     Downloads changes from the remote, but doesn't merge them automatically.
+13. `git clone <repo>`
+    Copies a remote repository to your local machine.
