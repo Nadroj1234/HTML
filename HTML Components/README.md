@@ -38,3 +38,4 @@
 ### **`.gitignore`**
 
     Use `.gitignore` file to specify files that should not be tracked/ commited to git.
+    Once a fle is tracked by git, adding it to .gitignore won't rempve it. You need to untrack it with git rm --cached
