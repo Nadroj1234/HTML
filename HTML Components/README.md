@@ -21,3 +21,5 @@
     Shows the current state of the working directory and staging area.
 8.  `git add <file>`
     Stages changes in a file for the next commit.
+9.  `git commit -m "message"`
+    Saves the staged changes with a commit message.
