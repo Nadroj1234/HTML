@@ -28,24 +28,57 @@
             <span class="badge badge--primary badge--small">20% Off</span>
           </p>
         </div>
-      </div>
-      <div id="list-div">
-        <h2>Lists</h2>
-        <div id="unordered-list">
-          <ul class="list checked-list">
-            <h3>Unordered</h3>
-            <li class="list-item list-tick">Item 1</li>
-            <li class="list-item list-tick">Item 2</li>
-            <li class="list-item list-tick">Item 3</li>
-          </ul>
+
+        <div id="list-div">
+          <h2>Lists</h2>
+          <div id="unordered-list">
+            <ul class="list checked-list">
+              <h3>Unordered</h3>
+              <li class="list-item list-tick">Item 1</li>
+              <li class="list-item list-tick">Item 2</li>
+              <li class="list-item list-tick">Item 3</li>
+            </ul>
+          </div>
+          <div id="horizontal-list">
+            <h3>Horizontal</h3>
+            <ul class="list list-horizontal">
+              <li class="list-item">Home</li>
+              <li class="list-item">Adult</li>
+              <li class="list-item">Contact</li>
+            </ul>
+          </div>
         </div>
-        <div id="horizontal-list">
-          <h3>Horizontal</h3>
-          <ul class="list list-horizontal">
-            <li class="list-item">Home</li>
-            <li class="list-item">Adult</li>
-            <li class="list-item">Contact</li>
-          </ul>
+        <div id="icon-div">
+          <h2>Icons with svg</h2>
+          <p>
+            I like computers (sometimes)
+            <span class="icon-container">
+              <svg class="icon icon-primary">
+                <use xlink:href="images/sprite.svg#computer"></use>
+              </svg>
+            </span>
+          </p>
+          <p>
+            my feelings about wordpress
+            <span class="icon-container">
+              <svg class="icon icon-primary">
+                <use xlink:href="images/sprite.svg#wordpress"></use>
+              </svg>
+            </span>
+          </p>
+        </div>
+        <div id="button-div">
+          <h2>Buttons</h2>
+          <button class="btn btn-primary">Buy Now!</button>
+          <a href="#" class="btn btn-secondary btn-block">Buy Now!</a>
+        </div>
+        <div id="input-div">
+          <h2>Inputs</h2>
+          <input
+            type="text"
+            class="custom-input"
+            placeholder="Enter your SSN"
+          />
         </div>
       </div>
     </div>
