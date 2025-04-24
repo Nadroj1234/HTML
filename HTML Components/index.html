@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="collapsible.js" defer></script>
   </head>
   <body>
     <div>
@@ -79,6 +80,151 @@
             class="custom-input"
             placeholder="Enter your SSN"
           />
+        </div>
+        <div id="s-media-div">
+          <h2>Media Objects</h2>
+          <div class="media">
+            <div class="media_image">
+              <svg class="icon icon-primary">
+                <use xlink:href="images/sprite.svg#clock"></use>
+              </svg>
+            </div>
+            <div class="media_body">
+              <h3 class="media_title">This is a note about Planets</h3>
+              <p>
+                Jupiter is made of gas. It is the largest planet and it has a
+                perpetual raging storm that looks like a red dot.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="styled_quotes_div">
+          <h2>Quotes (styled)</h2>
+          <blockquote class="quote">
+            <p class="quote_text">
+              Your mind is like this water, my friend. When it is agitated, it
+              becomes difficult to see. But if you allow it to settle, the
+              answer becomes clear.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media_image">
+                  <img
+                    class="icon"
+                    src="./images/image.jpg"
+                    alt="master oogway"
+                  />
+                </div>
+                <div class="media_body">
+                  <h3 class="media_title quote_author">Master Oogway</h3>
+                  <p class="quote_organization">Kung Fu Panda</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+        <div id="grid_div">
+          <h2>More Grids!</h2>
+          <h3>1x3</h3>
+          <div class="grid grid-3-col">
+            <div style="height: 100px; background: gold"></div>
+            <div style="height: 100px; background: dodgerblue"></div>
+            <div style="height: 100px; background: tomato"></div>
+          </div>
+          <h3>1x2</h3>
+          <div class="grid grid-2-col">
+            <div style="height: 100px; background: gold"></div>
+            <div style="height: 100px; background: dodgerblue"></div>
+          </div>
+        </div>
+        <div id="cards">
+          <h2>Cards</h2>
+          <div class="card_wrapper">
+            <div class="card">
+              <div class="card_img">
+                <img
+                  src="./images/Bowser.png"
+                  alt="bowser - King of the koopas"
+                />
+              </div>
+              <header class="card_header">Bowser!</header>
+              <div class="card_body">
+                He is the arch-nemesis of the plumber Mario and the leader of
+                the turtle-like Koopa race. Depicted as a fire-breathing monster
+                with a tyrannical personality.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img
+                  src="./images/Bowser.png"
+                  alt="bowser - King of the koopas"
+                />
+              </div>
+              <header class="card_header">Bowser!</header>
+              <div class="card_body">
+                He is the arch-nemesis of the plumber Mario and the leader of
+                the turtle-like Koopa race. Depicted as a fire-breathing monster
+                with a tyrannical personality.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img
+                  src="./images/Bowser.png"
+                  alt="bowser - King of the koopas"
+                />
+              </div>
+              <header class="card_header">Bowser!</header>
+              <div class="card_body">
+                He is the arch-nemesis of the plumber Mario and the leader of
+                the turtle-like Koopa race. Depicted as a fire-breathing monster
+                with a tyrannical personality.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img
+                  src="./images/Bowser.png"
+                  alt="bowser - King of the koopas"
+                />
+              </div>
+              <header class="card_header">Bowser!</header>
+              <div class="card_body">
+                He is the arch-nemesis of the plumber Mario and the leader of
+                the turtle-like Koopa race. Depicted as a fire-breathing monster
+                with a tyrannical personality.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="collapsibles">
+          <h2>Collapsibles (use JS for DOM Manipulation)</h2>
+          <div class="collapsible collapsible-expanded">
+            <header class="collapsible_header">
+              <h3 class="collapsible_heading">Item 1</h3>
+              <svg class="icon icon-primary collapsible_chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible_content">
+              <p>Hi.</p>
+            </div>
+          </div>
+        </div>
+        <div id="navbars">
+          <h2>Navbars</h2>
+          <nav class="nav collapsible">
+            <a href="#" class="nav_brand">Logo Here</a>
+            <svg class="icon icon-primary nav_toggler">
+              <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav_list collapsible_content">
+              <li class="nav_item"><a href="#">Item 1</a></li>
+              <li class="nav_item"><a href="#">Item 2</a></li>
+              <li class="nav_item"><a href="#">Item 3</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
