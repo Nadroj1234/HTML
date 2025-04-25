@@ -366,3 +366,66 @@ a {
     opacity: 1;
   }
 }
+
+/* Blocks */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block_header {
+  text-align: center;
+}
+
+.block_heading {
+  margin-top: 0;
+}
+
+.block-dark {
+  background-color: #000;
+  color: hotpink;
+}
+
+.block-dark .block_heading {
+  color: #fff;
+}
+
+.block-skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+/*percentages are top-left corner, top-right-corner, bottom-right-corner, bottom-left */
+.block-skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block-container {
+  background: purple;
+}
+
+/* Hero  */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero_tagline {
+  font-size: 2rem;
+  color: peru;
+  letter-spacing: 7px;
+  margin: 2rem 0 5rem;
+}
+
+.hero_image {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .grid-2-col {
+    grid-template-columns: 1fr;
+  }
+  .hero_image {
+    display: none;
+  }
+}

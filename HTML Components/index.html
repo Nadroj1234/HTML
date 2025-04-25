@@ -8,6 +8,35 @@
     <script src="collapsible.js" defer></script>
   </head>
   <body>
+    <div id="navbars">
+      <h2>Navbars</h2>
+      <nav class="nav collapsible">
+        <a href="#" class="nav_brand">Logo Here</a>
+        <svg class="icon icon-primary nav_toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav_list collapsible_content">
+          <li class="nav_item"><a href="#">Item 1</a></li>
+          <li class="nav_item"><a href="#">Item 2</a></li>
+          <li class="nav_item"><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="hero-section">
+      <h2>Hero</h2>
+      <section class="block block-dark block-skewed-left hero">
+        <div class="block-container grid grid-2-col">
+          <header class="block_header hero_content">
+            <h1 class="block_heading">My Super Fun HTML Component</h1>
+            <p class="hero_tagline">
+              All the markup you need for super fun html components
+            </p>
+            <a href="#" class="btn btn-primary">Check it out!</a>
+          </header>
+          <img class="hero_image" src="./images/image.jpg" alt="oogway" />
+        </div>
+      </section>
+    </div>
     <div>
       <h1>Im an h1 - using our headings color</h1>
       <div class="widget-grid">
@@ -212,19 +241,21 @@
             </div>
           </div>
         </div>
-        <div id="navbars">
-          <h2>Navbars</h2>
-          <nav class="nav collapsible">
-            <a href="#" class="nav_brand">Logo Here</a>
-            <svg class="icon icon-primary nav_toggler">
-              <use xlink:href="images/sprite.svg#menu"></use>
-            </svg>
-            <ul class="list nav_list collapsible_content">
-              <li class="nav_item"><a href="#">Item 1</a></li>
-              <li class="nav_item"><a href="#">Item 2</a></li>
-              <li class="nav_item"><a href="#">Item 3</a></li>
-            </ul>
-          </nav>
+
+        <div id="blocks">
+          <h2>Blocks</h2>
+          <div class="block-container">
+            <section class="block block-dark block-skewed-right">
+              <header class="block_header">
+                <h2 class="block_heading">Heading</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores alias nesciunt consectetur iste reprehenderit
+                  voluptatum, dolore libero repellendus velit delectus!
+                </p>
+              </header>
+            </section>
+          </div>
         </div>
       </div>
     </div>
