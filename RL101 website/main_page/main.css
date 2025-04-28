@@ -1,0 +1,52 @@
+:root {
+  --color-headings: #96897b;
+  --color-text: #628395;
+  --color-body: #dbad6a;
+  --color-footer: #cf995f;
+  --heading-font-size: 3em;
+  --border-radius: 10px;
+  --border-color: grey;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-columns: 3fr 2fr;
+  height: 100vh; /* vh = vewiport height */
+  grid-template-rows: auto 1fr auto; /* auto = size to fit content. 1fr in this case will use the rest */
+  gap: 10px; /* space between grid items */
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  color: var(--color-text);
+  text-align: center;
+  background-color: var(--color-headings);
+  padding: 10px;
+}
+
+main {
+  background-color: #dbad6a;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  color: var(--color-text);
+  text-align: center;
+  background-color: var(--color-footer);
+  padding: 10px;
+}
+
+.main_heading {
+  font-size: 3rem;
+}
+
+#main-page-content-div {
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+}
