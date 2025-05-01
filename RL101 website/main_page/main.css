@@ -1,36 +1,23 @@
 :root {
-  --color-headings: #96897b;
-  --color-text: #628395;
-  --color-body: #dbad6a;
-  --color-footer: #cf995f;
+  --color-headings: #264653;
+  --color-text: #e76f51;
+  --color-body: #f4a261;
+  --color-footer: #e9c46a;
+  --color-hover: #2a9d8f;
   --heading-font-size: 3em;
   --border-radius: 10px;
   --border-color: grey;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-  grid-template-columns: 3fr 2fr;
-  height: 100vh; /* vh = vewiport height */
-  grid-template-rows: auto 1fr auto; /* auto = size to fit content. 1fr in this case will use the rest */
-  gap: 10px; /* space between grid items */
-  padding: 10px;
-}
-
 header {
   grid-area: header;
   color: var(--color-text);
-  text-align: center;
   background-color: var(--color-headings);
   padding: 10px;
 }
 
 main {
-  background-color: #dbad6a;
+  background-color: var(--color-body);
   padding: 10px;
 }
 
@@ -42,11 +29,87 @@ footer {
   padding: 10px;
 }
 
-.main_heading {
-  font-size: 3rem;
+ul {
+  list-style: none;
 }
 
-#main-page-content-div {
+.widget_grid {
+  display: grid;
+}
+
+.nav {
+  background: var(--color-headings);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 5px;
   border-radius: var(--border-radius);
   border-color: var(--border-color);
+}
+
+.nav_list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav_item {
+  padding: 0.5rem 2rem;
+}
+
+.nav_item > a {
+  color: orange;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav_item > a:hover {
+  color: white;
+}
+
+.nav_brand {
+  color: var(--color-text);
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_list {
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+
+/* Grid */
+
+.grid-2-col {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* Hero */
+.hero_tagline {
+  font-size: 2rem;
+  color: var(--color-text);
+  letter-spacing: 2px;
+  margin: 2rem 0 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .grid-2-col {
+    grid-template-columns: 1fr;
+  }
+  .hero_image {
+    display: none;
+  }
+}
+
+.hero_image {
+  width: 100%;
 }
