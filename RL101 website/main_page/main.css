@@ -151,34 +151,6 @@ ul {
   }
 }
 
-/* Features */
-#features-div {
-  background-color: var(--color-body);
-  margin: 10px;
-  padding: 10px;
-}
-
-.feature_item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.icon {
-  height: 75px;
-  width: 50px;
-}
-
-.features_heading {
-  color: var(--color-text);
-  font-size: 40px;
-}
-
-.features_list {
-  color: var(--color-text);
-  font-size: 25px;
-}
-
 /* Promo Section */
 .badge {
   border-radius: 20px;
