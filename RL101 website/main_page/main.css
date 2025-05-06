@@ -9,6 +9,10 @@
   --border-color: grey;
 }
 
+body {
+  background-color: black;
+}
+
 header {
   grid-area: header;
   color: var(--color-text);
@@ -41,6 +45,10 @@ ul {
 /* Navbar Header */
 .rl101_header {
   font-size: 60px;
+}
+
+#navbar {
+  margin: 10px;
 }
 
 .nav {
@@ -91,8 +99,19 @@ ul {
 /* Hero */
 
 .block {
-  --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  --padding-vertical: 1rem;
+  padding: var(--padding-vertical) 1rem;
+  margin: 10px;
+}
+
+.hero_btn {
+  color: var(--color-text);
+  background-color: rgb(58, 58, 220);
+}
+
+.hero_btn:hover {
+  background-color: var(--color-hover);
+  color: white;
 }
 
 .block_header {
@@ -120,7 +139,7 @@ ul {
 }
 
 .hero_image {
-  width: 40%;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,7 +151,127 @@ ul {
   }
 }
 
-/* Featured Highlights */
+/* Features */
+#features-div {
+  background-color: var(--color-body);
+  margin: 10px;
+  padding: 10px;
+}
+
+.feature_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon {
+  height: 75px;
+  width: 50px;
+}
+
+.features_heading {
+  color: var(--color-text);
+  font-size: 40px;
+}
+
+.features_list {
+  color: var(--color-text);
+  font-size: 25px;
+}
+
+/* Promo Section */
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+}
+
+.badge:hover {
+  color: var(--color-hover);
+}
+
+.promo_para {
+  color: var(--color-text);
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+}
+
+#promo-div {
+  background-color: var(--color-body);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+}
+
+.badge--primary {
+  background-color: white;
+  color: var(--color-text);
+  font-size: 40px;
+}
+
+.badge--secondary {
+  background-color: white;
+  color: var(--color-text);
+  font-size: 40px;
+}
+
+/* Search Section */
+
+#search-div {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--color-body);
+  margin: 5px;
+}
+
+.search_header:hover {
+  background-color: var(--color-hover);
+}
+
+.custom-input {
+  color: var(--color-text);
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  width: 95%;
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: white;
+  color: var(--color-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-hover);
+}
+
+.btn-block {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Cards Section */
+
+#cards {
+  margin: 5px;
+}
 
 .featured_paras {
   font-size: 30px;
@@ -177,4 +316,5 @@ ul {
 #main-page-footer {
   display: flex;
   justify-content: space-evenly;
+  margin: 10px;
 }
