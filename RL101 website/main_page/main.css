@@ -151,6 +151,32 @@ ul {
   }
 }
 
+/* Features */
+#features-div {
+  background-color: var(--color-body);
+  margin: 10px;
+  padding: 10px;
+}
+
+.feature_heading {
+  font-size: 60px;
+  color: var(--color-text);
+}
+
+.feature_item {
+  color: var(--color-text);
+  display: flex;
+}
+
+.item_para {
+  font-size: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
 /* Promo Section */
 .badge {
   border-radius: 20px;
